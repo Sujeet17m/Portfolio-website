@@ -1,215 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Sujeet M - Full-Stack Developer • Data Enthusiast. Frontend (React, GSAP), Backend (Node, Express, MongoDB), Python & SQL."/>
-    <title>Sujeet M — Full-Stack Developer</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+        Sujeet Portfolio website
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+    </head>
+    <body>
+        
+        <header>
+            <div class="logo">
+                <img src="img/namelogo.jpg" alt="logo">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+    
+                </ul>
+            </nav>
+        </header>
 
-  <body>
-    <header>
-      <div class="logo">
-        <img src="img/namelogo.jpg" alt="Sujeet logo" />
-      </div>
-      <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
-      </button>
-      <nav class="nav" aria-label="Main navigation">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-          <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-          <li class="nav__item"><a href="#connect" class="nav__link">Connect</a></li>
-        </ul>
-      </nav>
-    </header>
+        <!--introduction-->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Sujeet M</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Full-Stack Developer</p>
+            <img src="https://avatars.githubusercontent.com/u/174356750?v=4" alt="a picture of Sujeet M " class="intro__img">
 
-    <!-- HERO / INTRO -->
-    <section class="intro" id="home" aria-labelledby="intro-title">
-      <div class="intro-inner">
-        <img
-          src="https://avatars.githubusercontent.com/u/174356750?v=4"
-          alt="Sujeet's profile picture"
-          width="130"
-          height="130"
-          style="border-radius:50%; display:block; margin:0 auto;"
-        />
-        <h1 id="intro-title" class="section__title section__title--intro">
-          Hey there — I'm <strong>Sujeet M</strong>
-        </h1>
-        <p class="section__subtitle section__subtitle--intro">Full-Stack Developer • Data Enthusiast • Explorer at Heart</p>
-        <p class="lead">
-          B.Tech in Computer Science. I craft crisp frontends (React, GSAP), robust backends (Node, Express, MongoDB),
-          and enjoy data wrangling with Python & SQL. I build short, demo-ready projects for real impact.
-        </p>
-        <a href="#projects" class="btn">View Projects</a>
-      </div>
-    </section>
+        </section>
+        <!--my services-->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Frontend Development</h3>
+                    <p>Building responsive and interactive user interfaces using React, JavaScript, and GSAP animations. Creating seamless user experiences with modern web technologies.</p>
+                </div>
+                <div class="service">
+                    <h3>Backend Development</h3>
+                    <p>Developing robust server-side applications with Node.js, Express, and MongoDB. Building RESTful APIs and authentication systems for full-stack applications.</p>
+                </div>
+                <div class="service">
+                    <h3>Data Analysis</h3>
+                    <p>Leveraging Python and SQL to derive insights and build data-driven solutions. Working with data pipelines and analysis to create meaningful outcomes.</p>
+                </div>
+            </div>
+            <a href="#work" class="btn">My Work</a>
+        </section>
 
-    <!-- SERVICES (kept and updated) -->
-    <section class="my-services" id="services" aria-labelledby="services-title">
-      <h2 id="services-title" class="section__title section__title--services">What I do</h2>
-      <div class="services">
-        <div class="service">
-          <h3>Design + Development</h3>
-          <p>Frontend development with React, animations with GSAP, and polished responsive UI.</p>
-        </div>
-        <div class="service">
-          <h3>Backend & APIs</h3>
-          <p>RESTful APIs, authentication, and data pipelines using Node.js, Express, and MongoDB.</p>
-        </div>
-        <div class="service">
-          <h3>Data & Automation</h3>
-          <p>Python scripting, data wrangling, and SQL for analytics and automation tasks.</p>
-        </div>
-      </div>
-      <a href="#work" class="btn">My Work</a>
-    </section>
+        <!--About me-->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class="section__subtitle section__subtitle--about">Full-Stack Developer & Data Enthusiast</p>
 
-    <!-- ABOUT -->
-    <section class="about-me" id="about" aria-labelledby="about-title">
-      <h2 id="about-title" class="section__title section__title--about">Who I am</h2>
-      <p class="section__subtitle section__subtitle--about">Full-Stack Developer & Data Enthusiast</p>
+            <div class="about-me__body">
+                <p>B.Tech in Computer Science with a passion for learning and building. I craft crisp frontends, robust backends, and love data wrangling. My projects are short, sharp, and demo-ready—I build for impact, not just for show.</p>
+                <p>This year, I'm focused on building and deploying 3 polished full-stack projects, mastering TypeScript, adding robust tests, and starting a monthly blog with bite-sized insights for developers.</p>
+            </div>
 
-      <div class="about-me__body">
-        <p>
-          I'm Sujeet — a B.Tech computer science grad who loves building. I focus on delivering practical,
-          demo-ready projects: frontend polish, backend reliability, and data-driven features.
-        </p>
-        <p>
-          Tools I use day-to-day: JavaScript/TypeScript, React, Node.js, Express, MongoDB, Python, SQL,
-          GSAP for animations, Git, and Docker.
-        </p>
-      </div>
+            <img src="img/WhatsApp Image 2025-06-01 at 00.04.11.jpg" alt="SujeetM full img" class="about-me__img">
+        </section>
 
-      <!-- fallback to your local image if present -->
-      <img src="img/WhatsApp Image 2025-06-01 at 00.04.11.jpg" alt="Sujeet M" class="about-me__img">
-    </section>
+        <!--My work-->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My Work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my featured projects</p>
 
-    <!-- TECH TOOLBOX (from README badges) -->
-    <section class="tech-toolbox" id="projects" aria-labelledby="tech-title">
-      <h2 id="tech-title" class="section__title">Tech Toolbox</h2>
-      <p class="section__subtitle">Technologies I work with </p>
-      <div class="toolbox-badges" style="display:flex; flex-wrap:wrap; gap:8px; align-items:center;">
-        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" alt="JavaScript"/>
-        <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" alt="TypeScript"/>
-        <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black" alt="React"/>
-        <img src="https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white" alt="Node.js"/>
-        <img src="https://img.shields.io/badge/Express-000000?logo=express&logoColor=white" alt="Express"/>
-        <img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white" alt="MongoDB"/>
-        <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python"/>
-        <img src="https://img.shields.io/badge/GSAP-88CE02?logo=greensock&logoColor=white" alt="GSAP"/>
-        <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white" alt="Git"/>
-        <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white" alt="Docker"/>
-      </div>
-    </section>
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="https://github.com/Sujeet17m/JAVA" class="portfolio__item">
+                    <img src="img/portfolio-01.jpg" alt="JAVA Project" class="portfolio__img">
+                    <div class="portfolio__description">Core and advanced Java practice—algorithms, OOP, and hands-on exercises</div>
+                </a>
+                
+                <!-- Portfolio item 02 -->
+                <a href="https://github.com/Sujeet17m/react_pro" class="portfolio__item">
+                    <img src="img/portfolio-02.jpg" alt="React Project" class="portfolio__img">
+                    <div class="portfolio__description">My React showcase—animations, hooks, real-world UI challenges</div>
+                </a>
+                
+                <!-- Portfolio item 03 -->
+                <a href="https://github.com/Sujeet17m/Backend" class="portfolio__item">
+                    <img src="img/portfolio-03.jpg" alt="Backend Project" class="portfolio__img">
+                    <div class="portfolio__description">RESTful APIs, authentication, and data pipelines using Node + Express</div>
+                </a>
+                
+                <!-- Portfolio item 04 -->
+                <a href="https://github.com/Sujeet17m/Web2" class="portfolio__item">
+                    <img src="img/portfolio-04.jpg" alt="Web2 Project" class="portfolio__img">
+                    <div class="portfolio__description">Modern web experiments—responsive layouts, interactive elements</div>
+                </a>
+                
+                <!-- Portfolio item 05 -->
+                <a href="https://github.com/Sujeet17m/GSAP" class="portfolio__item">
+                    <img src="img/portfolio-05.jpg" alt="GSAP Project" class="portfolio__img">
+                    <div class="portfolio__description">Animations that pop! GSAP-powered micro-interactions for the web</div>
+                </a>
+            </div>
+        </section>
 
-    <!-- FEATURED PROJECTS (from README) -->
-    <section class="featured-projects" id="featured-projects" aria-labelledby="projects-title">
-      <h2 id="projects-title" class="section__title">Featured Projects</h2>
-      <p class="section__subtitle">Short, sharp, demo-ready projects</p>
-      <ul class="projects-list" style="list-style:none; padding:0; margin:0;">
-        <li><a href="https://github.com/Sujeet17m/JAVA" target="_blank" rel="noopener noreferrer">JAVA — Core & advanced Java practice (algorithms, OOP)</a></li>
-        <li><a href="https://github.com/Sujeet17m/react_pro" target="_blank" rel="noopener noreferrer">react_pro — React showcase (animations, hooks, UIs)</a></li>
-        <li><a href="https://github.com/Sujeet17m/Backend" target="_blank" rel="noopener noreferrer">Backend — RESTful APIs, auth, data pipelines (Node + Express)</a></li>
-        <li><a href="https://github.com/Sujeet17m/Web2" target="_blank" rel="noopener noreferrer">Web2 — Modern web experiments (responsive & interactive)</a></li>
-        <li><a href="https://github.com/Sujeet17m/GSAP" target="_blank" rel="noopener noreferrer">GSAP — Animations & micro-interactions</a></li>
-      </ul>
-    </section>
+        <footer class="footer">
 
-    <!-- GITHUB STATS (images from README) -->
-    <section class="git-stats" aria-labelledby="stats-title">
-      <h2 id="stats-title" class="section__title">GitHub Stats</h2>
-      <div class="stats-images" style="text-align:center;">
-        <img src="https://github-readme-stats.vercel.app/api?username=Sujeet17m&show_icons=true&theme=radical" alt="GitHub Stats" style="max-width:100%;"/>
-        <br/>
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=Sujeet17m&theme=radical" alt="GitHub Streak" style="max-width:100%; margin-top:12px;"/>
-        <br/>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sujeet17m&layout=compact&theme=radical" alt="Top Languages" style="max-width:100%; margin-top:12px;"/>
-      </div>
-    </section>
+            <a href="mailto:sujeet17das@gmail.com" class="footer__link">sujeet17das@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/contactsujeetm/">
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/Sujeet17m">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://x.com/Sujeet729096111">
+                        <i class="fab fa-twitter"></i>
+                        Twitter
+                    </a>
+                </li>
+            </ul>
+        </footer>
 
-    <!-- My work / Portfolio (keeps original portfolio gallery) -->
-    <section class="my-work" id="work" aria-labelledby="work-title">
-      <h2 id="work-title" class="section__title section__title--work">My Work</h2>
-      <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
-
-      <div class="portfolio">
-        <!-- keep portfolio items as-is so your CSS gallery still works -->
-        <a href="#" class="portfolio__item"><img src="img/portfolio-01.jpg" alt="p1" class="portfolio__img"></a>
-        <a href="#" class="portfolio__item"><img src="img/portfolio-02.jpg" alt="p2" class="portfolio__img"></a>
-        <a href="#" class="portfolio__item"><img src="img/portfolio-03.jpg" alt="p3" class="portfolio__img"></a>
-        <a href="#" class="portfolio__item"><img src="img/portfolio-04.jpg" alt="p4" class="portfolio__img"></a>
-        <a href="#" class="portfolio__item"><img src="img/portfolio-05.jpg" alt="p5" class="portfolio__img"></a>
-        <a href="#" class="portfolio__item"><img src="img/portfolio-06.jpg" alt="p6" class="portfolio__img"></a>
-        <a href="#" class="portfolio__item"><img src="img/portfolio-07.jpg" alt="p7" class="portfolio__img"></a>
-        <a href="#" class="portfolio__item"><img src="img/portfolio-08.jpg" alt="p8" class="portfolio__img"></a>
-        <a href="#" class="portfolio__item"><img src="img/portfolio-09.jpg" alt="p9" class="portfolio__img"></a>
-        <a href="#" class="portfolio__item"><img src="img/portfolio-10.jpg" alt="p10" class="portfolio__img"></a>
-      </div>
-    </section>
-
-    <!-- CONNECT (badges + contact) -->
-    <section id="connect" class="connect" aria-labelledby="connect-title">
-      <h2 id="connect-title" class="section__title">Connect with Me</h2>
-      <p class="section__subtitle">Let's collaborate — available via LinkedIn, Email, or X</p>
-
-      <div class="connect-links" style="display:flex; gap:12px; flex-wrap:wrap; align-items:center;">
-        <a href="https://www.linkedin.com/in/contactsujeetm/" target="_blank" rel="noopener noreferrer">
-          <img src="https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white" alt="LinkedIn"/>
-        </a>
-        <a href="mailto:sujeet17das@gmail.com">
-          <img src="https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white" alt="Email"/>
-        </a>
-        <a href="https://x.com/Sujeet729096111" target="_blank" rel="noopener noreferrer">
-          <img src="https://img.shields.io/badge/X-1DA1F2?logo=twitter&logoColor=white" alt="X (Twitter)"/>
-        </a>
-      </div>
-
-      <p style="margin-top:1rem;"><strong>This Year’s Goals:</strong></p>
-      <ul>
-        <li>Build and deploy 3 polished full-stack projects (with docs).</li>
-        <li>Master TypeScript and add robust tests.</li>
-        <li>Start a monthly blog — bite-sized insights for devs on the go.</li>
-      </ul>
-    </section>
-
-    <footer class="footer" role="contentinfo">
-      <a href="mailto:sujeet17das@gmail.com" class="footer__link">sujeet17das@gmail.com</a>
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a class="social-list__link" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-instagram"></i> Instagram
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="https://www.linkedin.com/in/contactsujeetm/" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-linkedin"></i> LinkedIn
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="https://x.com/Sujeet729096111" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-twitter"></i> X
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="https://github.com/Sujeet17m" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-github"></i> GitHub
-          </a>
-        </li>
-      </ul>
-
-      <p style="text-align:center; margin-top:12px;"><strong>Code. Ship. Learn. Repeat.</strong></p>
-    </footer>
-
-    <script src="js/index.js"></script>
-  </body>
+        <script src="js/index.js"></script>
+    </body>
 </html>
